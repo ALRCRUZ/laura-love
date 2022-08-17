@@ -46,27 +46,27 @@ const job0 = new CronJob("0 7 * * 2,4", () => {
     tweet_bomdia()
 })
 
-const job1 = new CronJob("0 7 * * 1", () => {
+const job1 = new CronJob("0 10 * * 1", () => {
     console.log('Bom dia de segunda sendo enviado!')
     tweet_bomdia_segunda()
 })
 
-const job2 = new CronJob("0 7 * * 3", () => {
+const job2 = new CronJob("0 10 * * 3", () => {
     console.log('Bom dia de quarta sendo enviado!')
     tweet_bomdia_quarta()
 })
 
-const job3 = new CronJob("0 7 * * 5", () => {
+const job3 = new CronJob("0 10 * * 5", () => {
     console.log('Bom dia de sexta sendo enviado!')
     tweet_bomdia_sexta()
 })
 
-const job4 = new CronJob("0 10 * * 0,6", () => {
+const job4 = new CronJob("0 13 * * 0,6", () => {
     console.log('Bom dia do fim de semana sendo enviado!')
     tweet_bomdia_fds()
 })
 
-const job5 = new CronJob("30 22 * * 0-6", () => {
+const job5 = new CronJob("30 01 * * 0-6", () => {
     console.log('Boa noite sendo enviado!')
     tweet_boanoite()
 })
