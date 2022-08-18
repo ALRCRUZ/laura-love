@@ -41,7 +41,7 @@ const tweet_boanoite = async () =>
           if(error) throw error;
 })
 
-const job0 = new CronJob("0 7 * * 2,4", () => {
+const job0 = new CronJob("0 10 * * 2,4", () => {
     console.log('Bom dia sendo enviado!')
     tweet_bomdia()
 })
